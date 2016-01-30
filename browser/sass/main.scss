@@ -1,0 +1,32 @@
+@import 'reset';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: 'Press Start 2P', 'Consolas', monospace;
+  color:#eee;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color:#232323;
+}
+
+button:focus {outline:0;}
+
+#container {
+  margin:0 auto;
+  width:1024px;
+  height:768px;
+  overflow:hidden;
+}
+
+@import 'title';
+@import 'board';

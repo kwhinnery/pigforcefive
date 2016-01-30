@@ -1,0 +1,2 @@
+require('./title');
+require('./board');
