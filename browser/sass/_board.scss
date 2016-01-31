@@ -1,5 +1,37 @@
 #board {
-  .square {
-    border:1px solid #787878;
+  postiion: absolute;
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+
+  .board-square {
+    height: 32px;
+    width: 32px;
+    position:absolute;
+    background-color:#555;
+    border:1px solid #343434;
+
+    &.bricks {
+      background-image: url('/img/board/BrickGrey.png');
+    }
+
+    &.bricks:hover {
+      background-color:red;
+    }
+  }
+
+  .board-square:hover {
+    background-color: #787878;
+  }
+
+  .player {
+    z-index:20;
+    height:32px;
+    width:32px;
+    background-image:url('/img/board/KingEmmett.png');
+    position:absolute;
+    top: 32px * 19;
+    left: 32px * 16;
   }
 }
